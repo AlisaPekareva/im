@@ -12,7 +12,7 @@ class DefaultController extends AbstractController
     /**
      * @throws \Exception
      */
-    public function homepage(Request $request): Response
+    public function index(Request $request): Response
     {
         $number = random_int(0, 100);
 
