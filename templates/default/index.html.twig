@@ -1,5 +1,7 @@
 {% extends 'base.html.twig' %}
 
+
+
 {% block title %}Hello world!{% endblock %}
 
 {% block body %}
@@ -7,6 +9,11 @@
      <ul>
         {% for category in categories %}
             <li><a href="{{ path('category', {id: category.id}) }}">{{ category.name }}</a></li>
+        
+        {% endfor %}
+
+        {% for product in products %}
+             <li><a href="{{ path('product', {id: product.id}) }}">{{ product.name }}</a></li>
         {% endfor %}
     </ul>
 

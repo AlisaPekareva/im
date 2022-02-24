@@ -8,3 +8,8 @@ index:
 category:
     path: /katalog-{id}
     controller: App\Controller\DefaultController::category
+
+
+product:
+   path: /product
+   controller: App\Controller\ProductController::product
